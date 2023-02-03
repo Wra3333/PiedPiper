@@ -1,0 +1,20 @@
+.footer {
+    padding: 50px 0px 62px 0px;
+    background-color: var(--color-background-footer);
+    color: var(--color-font-accent);
+
+    // .footer__container
+
+    &__container {
+        &_short {
+            max-width: 540px;
+
+        }
+    }
+
+    // .footer__text
+
+    &__text {
+        text-align: center;
+    }
+}

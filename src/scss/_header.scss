@@ -1,0 +1,107 @@
+.header {
+    position: sticky;
+    top: 0px;
+    background-color: var(--color-background-header);
+    padding: 20px 0;
+
+    // .header__container
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__logo
+    &__logo {
+
+        img {
+            @media (max-width: $mobile) {
+                width: 120px;
+            }
+        }
+    }
+
+    // .header__nav
+    &__nav {}
+
+    // .header__menu
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        font: var(--text-a-font);
+        color: var(--color-font-accent);
+
+        @media(max-width: $mobileSmall) {
+            display: none;
+        }
+    }
+
+    // .header__burger
+    &__burger {
+        background-color: initial;
+        min-height: 40px;
+        margin-bottom:-12px;
+        @media(min-width: $mobileSmall) {
+            display: none;
+        } 
+    }
+    &__line{
+        position: relative;
+        top: -6px;
+        width: 40px;
+        height: 3px;
+        background-color: var(--color-background-white);
+        &::after {
+            content: "";
+            inset: -14px 0px;
+            width: 40px;
+            height: 3px;
+            position: absolute;
+            background-color: var(--color-background-white);
+        }
+
+        &::before {
+            content: "";
+            position: relative;
+            inset: 14px 0px;
+            width: 40px;
+            height: 3px;
+            position: absolute;
+            background-color: var(--color-background-white);
+        }
+    }
+
+    // .header__menu-burger
+    &__menu-burger {
+
+
+    }
+    // .header__item
+    &__item {
+        
+        display: flex;
+        align-items: center;
+        position: relative; 
+        &:not(:last-child):after {
+            content: "";
+            right: -12px;
+            position: absolute;
+            width: 1px;
+            height: 29px;
+            background-color: var(--color-font-accent);
+        }
+    }
+    // .header__link
+    &__link {
+        &:hover{
+            transition: transform 0.3s;
+            transform: scale(1.05);
+        }
+        &:focus-visible{
+            border-radius: 2px;
+            outline: 2px solid white;
+            outline-offset: 4px;
+        }
+    }
+}

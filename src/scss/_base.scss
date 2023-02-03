@@ -1,0 +1,45 @@
+.scroll-hidden { 
+    overflow: hidden 
+}
+ 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+/*
+ &__burger {
+     position: relative;
+     top: -6px;
+     width: 40px;
+     height: 3px;
+     background-color: var(--color-background-white);
+
+     &::after {
+         content: "";
+         inset: -14px 0px;
+         width: 40px;
+         height: 3px;
+         position: absolute;
+         background-color: var(--color-background-white);
+   }
+
+    &::before {
+         content: "";
+         position: relative;
+         inset: 14px 0px;
+         width: 40px;
+         height: 3px;
+         position: absolute;
+         background-color: var(--color-background-white);
+     }
+     @media(min-width: $mobileSmall) {
+         display: none;
+     }
+ }
+*/

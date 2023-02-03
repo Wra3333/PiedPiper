@@ -1,0 +1,13 @@
+.banner {
+    color: var(--color-font-accent);
+    font: var(--h1-font);
+    padding: 160px 0px;
+    background: url("../img/banner/banner.jpg") 50%/cover;
+    // .banner__container
+    &__container {
+    }
+    // .banner__title
+    &__title {
+        text-align: center;
+    }
+}
