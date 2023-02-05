@@ -39,7 +39,7 @@
             overflow: auto;
             text-transform: capitalize;
 
-            &_active::before {
+            ::before {
                 content: "";
                 position: fixed;
                 z-index: 2;

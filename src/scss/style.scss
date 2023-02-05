@@ -11,96 +11,97 @@ $tablet: 991.98px;
 $mobile: 767.98px;
 $mobileSmall: 479.98px;
 
-:root {
+:root{
+
     // Typography
-
+    
     --font-family-base: 'Roboto', sans-serif;
-
+    
     // h1
     --h1-font-size: #{rem(72)};
     --h1-font-weight: 500;
     --h1-line-height: #{line-h(84,72)};
-
+    
     // h2
     --h2-font-size: #{rem(64)};
     --h2-font-weight: 500;
     --h2-line-height: #{line-h(75,64)};
-
+    
     // h3
     --h3-font-size: #{rem(24)};
     --h3-font-weight: 700;
     --h3-line-height: #{line-h(28,24)};
-
+    
     // Text-p
     --text-p-size: #{rem(32)};
     --text-p-weight: 400;
     --text-p-line-height:#{line-h(38,32)};
-
+    
     // Text-hero
     --text-hero-size: #{rem(48)};
     --text-hero-weight: 500;
     --text-hero-line-height:#{line-h(56,48)};
     --text-hero-style: italic;
-
+    
     // Text-card
     --text-card-size: #{rem(18)};
     --text-card-weight: 400;
     --text-card-line-height: #{line-h(21,18)};
     --text-card-style: italic;
-
+    
     // Text-footer
     --text-footer-size: #{rem(18)};
     --text-footer-weight: 400;
     --text-footer-height:#{line-h(21,18)};
-
+    
     // Text-a
     --text-a-size: #{rem(24)};
     --text-a-weight: 400;
     --text-a-height:#{line-h(21,18)};
     // font 
     --h1-font:
-        var(--h1-font-weight) var(--h1-font-size)/var(--h1-line-height) var(--font-family-base);
-
+    var(--h1-font-weight) var(--h1-font-size)/var(--h1-line-height) var(--font-family-base);
+    
     --h2-font:
-        var(--h2-font-weight) var(--h2-font-size)/var(--h2-line-height) var(--font-family-base);
-
+    var(--h2-font-weight) var(--h2-font-size)/var(--h2-line-height) var(--font-family-base);
+    
     --h3-font:
         var(--h3-font-weight) var(--h3-font-size)/var(--h3-line-height) var(--font-family-base);
 
-    --text-hero-font:
+        --text-hero-font:
         var(--text-hero-style) var(--text-hero-weight) var(--text-hero-size)/var(--text-hero-line-height) var(--font-family-base);
-
-    --text-p-font:
+        
+        --text-p-font:
         var(--text-p-weight) var(--text-p-size)/ var(--text-p-line-height) var(--font-family-base);
-
-    --text-card-font:
+        
+        --text-card-font:
         var(--text-card-style) var(--text-card-weight) var(--text-card-size)/var(--text-card-line-height) var(--font-family-base);
 
-    --text-footer-font:
+        --text-footer-font:
         var(--text-footer-size)/var(--text-footer-height) var(--text-footer-weight) var(--font-family-base);
-
-    --text-a-font:
+        
+        --text-a-font:
         var(--text-a-weight) var(--text-a-size)/var(--text-a-height) var(--font-family-base);
-
-    // color
-    --color-font-default: #000000;
-    --color-font-attention: #007765;
-    --color-font-accent: #ffffff;
-    --color-background-default: #EEEEEE;
-    --color-background-header: #007765;
-    --color-background-footer: #333333;
-    --color-background-white: #ffffff;
-
-    // padding & margin
-    --text-p-padding: 48px 0px 92px 0px;
-    --text-p-margin: 40px;
-
-    // grid
-    --gap: 30px;
-    --minmax:256px;
-
-    //media css
-    @media (max-width: $mobile) {
+        
+        // color
+        --color-font-default: #000000;
+        --color-font-attention: #007765;
+        --color-font-accent: #ffffff;
+        --color-background-default: #EEEEEE;
+        --color-background-header: #007765;
+        --color-background-footer: #333333;
+        --color-background-white: #ffffff;
+        
+        // padding & margin
+        --text-p-padding: 48px 0px 92px 0px;
+        --text-p-margin: 40px;
+        
+        // grid
+        --gap: 30px;
+        --minmax:256px;
+        
+        //media css
+        @media (max-width: $mobile) {
         --h1-font-size: 2.5rem;
         --h2-font-size: 2rem;
         --h3-font-size: 1.2rem;
@@ -115,18 +116,19 @@ $mobileSmall: 479.98px;
         --text-a-size:#{rem(30)}
     }
 }
-// reset
-@import "./_reset.scss";
-.wrapper {
-    min-height: 100%;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-}
-
-.main{
-    min-width: 0;
-    flex: 1 1 auto;
+    
+    // reset
+    @import "./_reset.scss";
+    .wrapper {
+        min-height: 100%;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    
+    .main{
+        min-width: 0;
+        flex: 1 1 auto;
 }
 
 [class*="__container"] {
