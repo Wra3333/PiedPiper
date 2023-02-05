@@ -3,8 +3,8 @@
 @import "./fun.scss";
 
 // base
-$container-width: 1010px;
 $container-padding: 30px;
+$container-width: 1110px + $container-padding;
 $min-width: 320px;
 $pc: $container-width + $container-padding;
 $tablet: 991.98px;
@@ -97,7 +97,7 @@ $mobileSmall: 479.98px;
 
     // grid
     --gap: 30px;
-    --minmax:246px;
+    --minmax:256px;
 
     //media css
     @media (max-width: $mobile) {
@@ -118,13 +118,11 @@ $mobileSmall: 479.98px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    >main {
-        flex: 1 1 auto;
-    }
+}
 
-    >* {
-        min-width: 0;
-    }
+.main{
+    min-width: 0;
+    flex: 1 1 auto;
 }
 
 [class*="__container"] {
