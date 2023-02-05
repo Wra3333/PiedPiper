@@ -111,12 +111,16 @@ $mobileSmall: 479.98px;
         --text-a-size: 1rem;
         --text-p-margin: 15px;
     }
+    @media (max-width: $mobileSmall) {
+        --text-a-size:#{rem(30)}
+    }
 }
 // reset
 @import "./_reset.scss";
 .wrapper {
     min-height: 100%;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
 }
 
