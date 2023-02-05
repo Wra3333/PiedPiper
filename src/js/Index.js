@@ -8,10 +8,9 @@ burgerBtn.addEventListener("click", () => {
 })
 burgerMenu.addEventListener("click", function ({ target }) {
     if (target == null) return;
-    console.log(this)
     if (target.closest("a")) {
-        document.body.classList.toggle("scroll-hidden")
-        burgerMenu.classList.toggle("header__nav_active")
-        burgerBtn.classList.toggle("header__burger_active")
+        document.body.classList.remove("scroll-hidden")
+        burgerMenu.classList.remove("header__nav_active")
+        burgerBtn.classList.remove("header__burger_active")
     }
 })
